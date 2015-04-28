@@ -1,0 +1,35 @@
+<html>
+<body>
+
+<div class='header'><h1>Home</h1></div>
+<select id="codes">
+<option id="rect2" value="rect2">Rect(x,y,width,height)</option>
+<option id="circ2" value="circ2">Circ(x,y,width,height)</option>
+<option id="line2" value="line2">Line(x,y,x2,y2)</option>
+</select>
+<br>
+<textarea id="text" rows="4" cols="50"></textarea>
+<div class='search-view'>
+<!-- <input class='search-key' type="text"/>
+<ul class='employee-list'></ul> -->
+</div>
+<script>
+	var rectSet = false;
+	var circSet = false;
+</script>
+<button type="button" id="rect" onClick="drawRect()">Draw Rect!</button>
+<button type="button" id="circle" onClick="drawCircle()">Draw Circle!</button>
+<input type="submit" value="Clear Screen!" onClick="clearCanvas2()">
+<br>
+<canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+
+
+<script src="lib/jquery-1.8.2.min.js"></script>
+<script src="js/storage/memory-store.js"></script>
+<!-- <script src="js/main.js"></script> -->
+<script src="js/draw.js"></script>
+
+</body>
+</html>
